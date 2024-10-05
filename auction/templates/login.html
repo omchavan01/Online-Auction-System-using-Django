@@ -1,0 +1,43 @@
+{% extends 'navigation.html' %}
+{% block body %}
+{% load static %}
+{% if error == "pat" %}
+<script>
+  alert('Logged in successfully');
+  window.location.href = ('{% url "profile" %}');
+</script>
+{% endif %}
+{% if error == "pat1" %}
+<script>
+  alert('Logged in successfully');
+  window.location.href = ('{% url "profile" %}');
+</script>
+{% endif %}
+{% if error == "not" %}
+<script>
+  alert('Username & Password are not Matching');
+</script>
+{% endif %}
+<div class="container-fluid" style="width:70%;margin-top:7%">
+    <div class="col-md-6">
+      <h2 class="text-center">Login Form</h2>
+      <hr>
+      <form method="post" action="">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="font-weight: bold;">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="uname"
+            placeholder="Enter Username" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="font-weight: bold;">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" autocomplete="off" name="pwd">
+        </div>
+        <button type="submit" class="btn btn-danger" style="margin-left: 5.5rem;margin-top:2%">SUBMIT</button>
+        <button  class="btn btn-danger" style="margin-left: 2rem;color:white;margin-top:2%"><a href="{% url 'signup' %}"
+          style="color:white">CREATE AN ACCOUNT</a></button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+

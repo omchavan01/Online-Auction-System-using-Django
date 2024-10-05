@@ -1,0 +1,30 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<center>
+     <h2 style="font-family : 'Monotype Corsiva' ; color : #E6120E; font-weight : bold;margin-top:2%">About Us</h2>
+</center>
+<hr>
+<section id="about">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-6">
+                    <img src="{% static 'images/about_auction.jpg' %}" style="height:350px;width:97%">
+               </div>
+               <div class="col-md-6">
+                    <div style="color:blue;font-size:20px;font-family:cursive">
+                         <p>Welcome to Online Auction Servcie System, your premier destination for online auctions!
+                              We’ve dedicated ourselves to connect buyers and sellers in a secure and user-friendly
+                              environment.</p>
+                         <p style="color: black;">Our Mission</p>
+                         <p>Our mission is to provide a dynamic and transparent marketplace where users can confidently
+                              bid, buy, and sell a diverse range of items.</p>
+                         <p>Join Us!
+                              Experience the excitement of online auctions with Online Auction Servcie System. Register
+                              today and
+                              start your auction journey!</p>
+                    </div>
+               </div>
+          </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<h3 align="center">Scan My QR Code</h3>
+<div class="container" style="width:70%">
+    <div class="row" style="border:1px solid grey;border-radius:8px">
+    <div class="col-md-6">
+        <img src="{% static 'images/google_pay2.jpg' %}" style="width:100%;height:400px">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'images/qr.jpg' %}" style="width:100%;height:400px">
+    </div></div>
+    <h5 align="center" style="border:1px solid grey;padding:20px;font-weight:bold">Total : Rs. 100.00/-</h5>
+<form action="" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+{% if terror %}
+<script>
+    alert('Membership Granted Successfully!! Login again for Service');
+    window.location = "{% url 'login_user' %}";
+</script>
+{% endif %}
+
+{% endblock %}

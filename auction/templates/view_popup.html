@@ -1,0 +1,6 @@
+{% if error %}
+<script>
+    alert('You are not a participant of this auction');
+    window.location = "{% url 'view_auction' 0 %}";
+</script>
+{% endif %}
