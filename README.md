@@ -3,11 +3,6 @@
 
 This project implements an online auction platform using Django, allowing users to bid on items in real-time. It features user registration, item listing, bidding, and auction management functionalities. Admins can manage auctions and monitor bids, while users can place bids, view auction history, and receive notifications about auction status. The system is built with a user-friendly interface and leverages modern web technologies for a seamless auction experience.
 
-
-
-
-
-
 ## Features
 
 - User Registration and Authentication: Secure registration and login for buyers, sellers, and administrators.
@@ -16,15 +11,12 @@ This project implements an online auction platform using Django, allowing users 
 - Responsive Design: Built with HTML, CSS, and Bootstrap to ensure a seamless user experience across devices.
 - Real-Time Updates: Users can see real-time updates on auction status and bids.
 
-
 ## Requirements
 
 - Python 3.x
 - A text editor or IDE (e.g., VS Code, PyCharm, Sublime Text)
 - Python framework (Django)
 - SQLite (database)
-
-
 
 ## Installation
 
